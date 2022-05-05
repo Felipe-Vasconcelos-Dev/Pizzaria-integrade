@@ -1,0 +1,299 @@
+html {
+  font-size: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+
+ul {
+  list-style: none;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+header .header-top-container {
+  background-color: #6B5150;
+  color: #ddd5d5;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 100%;
+  height: 50px;
+}
+header .header-top-container i {
+  color: #B85552;
+  font-size: 15px;
+  padding: 10px;
+}
+header .header-top-container span {
+  font-size: 1.2rem;
+}
+header .header-top .main-header {
+  width: 100%;
+  height: 80px;
+  background-color: #15161D;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+header .header-top .main-header img {
+  position: absolute;
+  top: 10px;
+  left: 130px;
+  z-index: 10;
+}
+header .header-top .main-header .main-menu {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+header .header-top .main-header .main-menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header-top .main-header .main-menu ul a {
+  margin: 10px;
+  color: #cfbabaed;
+  border-bottom: 2px solid transparent;
+  transition: 0.4s;
+}
+header .header-top .main-header .main-menu ul a:hover {
+  border-bottom: 2px solid #7c4c25;
+}
+
+.banner {
+  position: relative;
+}
+.banner .foto {
+  background-image: url("../img/banner.jpg");
+  height: 400px;
+  background-size: cover;
+  background-color: red;
+  background-position-y: -450px;
+}
+
+.card-container {
+  width: 100%;
+  background-color: #7c4c25;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 100;
+}
+.card-container-pai {
+  width: 80%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  padding-top: 100px;
+}
+.card-container-pai .card {
+  color: #ddd5d5;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 35%;
+  height: 500px;
+  line-height: 25px;
+  padding-right: 10px;
+}
+.card-container-pai .card-1 {
+  background-image: url("../img/card-1.png");
+  width: 100%;
+  height: 250px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+.card-container-pai .card-2 {
+  background-image: url("../img/card-2.png");
+  width: 100%;
+  height: 250px;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 10px;
+}
+.card-container-pai .card-3 {
+  background-image: url("../img/card-3.png");
+  width: 170%;
+  height: 240px;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 10px;
+}
+.card-container-pai .card .card-title {
+  font-size: 1rem;
+  padding: 10px 0;
+}
+.card-container-pai .card .description-bottom {
+  text-align: left;
+}
+.card-container .history {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  z-index: 1200;
+}
+.card-container .history-logo {
+  background-image: url("../img/logo-big.png");
+  background-repeat: no-repeat;
+  backgound-size: cover;
+  height: 500px;
+  width: 50%;
+  height: 500px;
+}
+.card-container .history-content {
+  width: 50%;
+  color: #ddd5d5;
+  padding-left: 80px;
+  height: 500px;
+}
+.card-container .history-content h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.galery ul {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  align-items: center;
+}
+.galery ul .foto {
+  width: 100%;
+  height: 340px;
+  display: flex;
+}
+.galery ul .foto-1 {
+  background-image: url("../img/bolo1.jpg");
+  background-size: cover;
+  background-position-x: -50px;
+  background-repeat: no-repeat;
+  color: red;
+}
+.galery ul .foto-2 {
+  background-image: url("../img/bolo2.jpg");
+  background-size: cover;
+  background-position-x: -50px;
+  background-repeat: no-repeat;
+  color: red;
+}
+.galery ul .foto-3 {
+  background-image: url("../img/bolo3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: red;
+}
+.galery ul .foto-4 {
+  background-image: url("../img/bolo4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: red;
+}
+.galery ul .foto .cover {
+  width: 100%;
+  background-color: transparent;
+  transition: 0.3s;
+  text-align: center;
+  font-size: 2rem;
+  color: transparent;
+}
+.galery ul .foto .cover:hover {
+  background-color: #ffffff99;
+  display: block;
+  cursor: pointer;
+  color: #000;
+}
+.galery ul .foto .cover:hover p {
+  display: block;
+  transform: translateY(20px);
+}
+.galery ul .foto .cover p {
+  transition: 1s;
+  transform: translateY(30px);
+}
+
+.maps {
+  background-color: #7c4c25;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  border-top: 8px solid #ddd5d5;
+}
+.maps h1 {
+  color: #ddd5d5;
+  margin-bottom: 20px;
+}
+.maps .maps-content {
+  border: 10px solid #dee2e2;
+}
+
+.happy {
+  background-color: #000;
+  height: auto;
+  width: 100%;
+  color: #ddd5d5;
+  display: flex;
+  padding: 20px 200px;
+}
+.happy-content {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  padding: 0 100px;
+  padding-top: 100px;
+}
+.happy-content h1 {
+  color: yellow;
+  padding-bottom: 10px;
+}
+.happy-content p {
+  padding-bottom: 10px;
+  line-height: 25px;
+}
+.happy-photo {
+  width: 50%;
+  background-image: url("../img/happy.png");
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position-y: 40px;
+}
+.happy a {
+  color: white;
+}
+
+/*# sourceMappingURL=app.css.map */
