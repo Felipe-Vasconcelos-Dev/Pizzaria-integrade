@@ -1,41 +1,89 @@
 @use '../1-base/_variables'
-
-header
-    .header-top
-
-        &-container
-            background-color: variables.$color-header-top
-            color: variables.$color-gray
-            display: flex
-            justify-content: space-around
+@use '../4-maxins/_maxins'
+.header
+    position: relative
+    
+    .ativo
+            left: 0
+            transition: 1.5s
+            opacity: 100%
+    
+    
+    &-lateral
+        position: absolute
+        width: 100vw
+        border-right: 3px solid variables.$color-gray
+        left: -99.5vw
+        z-index: 1
+        transition: 1.5s
+        height: 80vh
+        background-color: variables.$bg-color
+        opacity: 0%
+        ul
+            display: grid
+            gap: 1px
+            flex-direction: column
+            justify-content: center
             align-items: center
-            max-width: 100%
-            height: 50px
-            i
-                color: variables.$color-icons
-                font-size: 15px
-                padding: 10px
-            span
-                font-size: 1.2rem
+            padding-top: 1rem
+            height: 60vh
+            width: 100%
+            
+            li
+                width: 100vw
+                text-align: center
+                padding: 1rem 0
+                a
+                    color: variables.$color-gray
+                    padding-bottom: 2px 
+                    width: 100%
+                &:hover
+                    background-color: red
+                
+    
+    .header-top
+        
+        
         .main-header
             width: 100%
             height: 80px
             background-color: variables.$bg-color
             display: flex
-            justify-content: space-around
+            justify-content: flex-end
             position: relative
-
+            align-items: center
+            @include maxins.mobile-E-tablet
+            
+                z-index: 10
+            .fa-bars
+                position: absolute
+                color: variables.$color-gray
+                font-size:  1.5rem
+                display: none
+                @include maxins.mobile-E-tablet
+                    display: initial
+                    right: 20px
+                
             img
                 position: absolute
                 top: 10px
                 left: 130px
-                z-index: 10
+                z-index: 11
+                
+                @include maxins.mobile
+                    
+                    padding-top: 0px
+                    left: 10px
             .main-menu
                 height: 100%
                 display: flex
                 justify-content: center
                 align-items: center
                 margin-right: 15px
+                @include maxins.mobile-E-tablet
+                    display: none
+
+                
 
                 ul
                     display: flex
@@ -55,5 +103,13 @@ header
         background-image: url('../img/banner.jpg')
         height: 400px
         background-size: cover
-        background-color: red
-        background-position-y: -450px
+        background-position-y: -300px
+        background-repeat: no-repeat
+        @include maxins.mobile
+            background-position: center
+
+        @include maxins.tablet
+            background-position: center
+            
+            
+        
